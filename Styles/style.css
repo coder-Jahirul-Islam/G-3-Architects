@@ -331,9 +331,8 @@ h2 span:nth-child(3) {
   font-size: 16px;
 }
 
-.thumbmail {
-  width: 100%;
-}
+
+
 
 .prg-desc {
   font-family: "Work Sans", sans-serif;
@@ -369,6 +368,17 @@ h2 span:nth-child(3) {
   height: 600px;
 }
 
+.thumbmail {
+  position: relative;
+  width: 100%;
+}
+
+.thumbmail button {
+  position: absolute;
+  bottom: -68px;
+  left: -60px;
+}
+
 .thumbmail img {
   width: 100%;
   height: 100%;
@@ -402,6 +412,14 @@ h2 span:nth-child(3) {
 .sponser__logo {
   display: flex;
   justify-content: space-between;
+
+}
+
+.sponser__logo img {
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+
 }
 
 /*  spomser ends  */
@@ -480,12 +498,12 @@ h2 span:nth-child(3) {
 
 .demo_details_card_active {
   background-color: #fff;
-  border-left: 6px solid var(--primary-color);
+  border-left: 6px solid #ff900e;
 }
 
 .demo_details_card:hover {
   background-color: #fff;
-  border-left: 6px solid var(--primary-color);
+  border-left: 6px solid royalblue;
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
@@ -572,229 +590,8 @@ h2 span:nth-child(3) {
 
 }
 
+/* footer ends */
 
 
 
-/* responsive style */
 
-@media (max-width: 768px) {
-  .logo-title {
-    font-size: 24px;
-    line-height: 23px;
-    margin-bottom: 0;
-  }
-
-  /* benefits start */
-  .demo {
-    flex-direction: column;
-  }
-
-  .benefits_wrapper {
-    padding: 30px 30px;
-  }
-
-  .demo_video,
-  .demo_details {
-    width: 100%;
-  }
-
-  .benefits_ads {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 10px;
-    ;
-  }
-
-  .benefits_ads .section_title {
-    margin-bottom: 25px !important;
-
-  }
-
-  .benefits_cards {
-    justify-content: center;
-
-  }
-
-  .benefits_card_slngle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  /* Benefits end */
-
-
-}
-
-@media (max-width: 650px) {
-  .logo-title {
-    font-size: 24px;
-    line-height: 23px;
-
-    margin-bottom: 20px;
-  }
-
-  .navbar {
-    flex-direction: column;
-  }
-
-  .features-list-contents {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 38px;
-    flex-direction: column;
-  }
-
-
-
-  /* expeicence starts */
-  .experience-content {
-    flex-direction: column;
-  }
-
-  .content__text {
-    padding: 24px;
-  }
-
-  .sponser__text {
-    text-align: center;
-    padding: 20px;
-  }
-
-  .sponser__logo {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-
-  /* facts section starts */
-  #some-facts {
-    padding: 80px 20px;
-  }
-
-  .facts-header {
-    margin-bottom: 45px;
-  }
-
-  .facts-header h2 {
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 50px;
-    color: #131313;
-    margin-bottom: 24px;
-    font-family: 'Poppins', sans-serif;
-  }
-
-  .facts-header p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: #727272;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-  }
-
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 0px 45px;
-    gap: 20px;
-
-  }
-
-  .single-card {
-    width: 23%;
-    border: 1px solid #FF900E;
-    border-radius: 8px;
-    padding: 40px;
-    transition: 1s;
-    border: 2px solid gray;
-    padding: 10px;
-    text-align: center;
-    
-  }
-  .single-card:hover{
-    background-color:#e7e7e7;
-    cursor: pointer;
-    transform: scale(1.2);
-    transform: rotate(360deg);
-  }
-  .single-card h4 {
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 40px;
-    color: #424242;
-}
-.single-card img{
-  width:35px;
-}
-.single-card p{
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 18px;
-    color: #727272;
-}
-}
-
-@media screen (max-width:700px){
-  #some-facts {
-    padding: 20px 10px;
-  }
-  
-  .facts-header{
-    margin-bottom: 20px;
-  }
-  .facts-header h2 {
-    font-size: 25px;
-    line-height: 23px;
-    margin-bottom: 5px;
-}
-.cards{
-  justify-content: center;
-  gap:10px;
-  margin: 0 0;
-
-}
-.single-card{
-  width: 47%;
-}
-.facts-header p{
-  display: none;
-}
-.single-card h4{
-  font-size:30px;
-}
-.thumbmail img{
-  flex-direction: column-reverse;
-}
-.feature-left .img-card{
-  flex-direction: column-reverse;
-}
-  
-}
-@media (max-width:380px) {
-  .cards {
-      margin: 0px 0px;
-      gap: 10px;
-  }
-
-  .single-card {
-      width: 100%;
-  }
-  .single-card h4{
-    font-size:20px;
-  }
-}
-@media (max-width:580px) {
-  .single-card h4{
-    font-size:20px;
-  }
-}
